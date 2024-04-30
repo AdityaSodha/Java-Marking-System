@@ -16,10 +16,9 @@ This project is a marking system developed in Java that helps you to learn basic
    ```bash
    git clone https://github.com/AdityaSodha/Java-Marking-System
 2. **Compile and Run:**
-```bash
-  javac MarkingSystemGUI.java
-  java MarkingSystemGUI
-```
+     ```bash
+     javac MarkingSystemGUI.java
+     java MarkingSystemGUI
 3. **Follow On-Screen Instructions**
    - You can add your subjects, also the marks saved on a file too.
 4. **Access Saved Marks**
