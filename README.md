@@ -21,7 +21,7 @@ This project is a marking system developed in Java that helps you to learn basic
   java MarkingSystem
 ```
 3. **Follow On-Screen Instructions**
-   - You can add your subjects, also the marks saved on a file too
+   - You can add your subjects, also the marks saved on a file too.
 4. **Access Saved Marks**
    - Marks are stored in a file named "marks.txt" in the project directory.
 
