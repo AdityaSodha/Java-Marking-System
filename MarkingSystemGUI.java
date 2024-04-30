@@ -17,13 +17,11 @@ public class MarkingSystemGUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(9, 2));
 
-        // Create label and text field for student's name
         nameLabel = new JLabel("Student Name: ");
         nameField = new JTextField();
         add(nameLabel);
         add(nameField);
 
-        // Create labels and text fields for subjects
         labels = new JLabel[7];
         textFields = new JTextField[7];
         String[] subjects = {"Account", "Economics", "BO", "SPCC", "State Computer", "Gujarati", "English"};
@@ -34,7 +32,6 @@ public class MarkingSystemGUI extends JFrame {
             add(textFields[i]);
         }
 
-        // Create calculate button
         calculateButton = new JButton("Calculate");
         add(calculateButton);
         calculateButton.addActionListener(new CalculateButtonListener());
@@ -50,7 +47,6 @@ public class MarkingSystemGUI extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String studentName = nameField.getText();
 
-            // Calculate total marks
             double totalMarks = 0;
             boolean fail = false;
             for (int i = 0; i < 7; i++) {
@@ -66,17 +62,14 @@ public class MarkingSystemGUI extends JFrame {
                 }
             }
 
-            // Calculate percentage
             double percentage = (totalMarks / 7);
 
-            // Display result
             if (fail) {
                 resultLabel.setText("<html>Student: " + studentName + "<br>Percentage: <font color='red'>" + String.format("%.2f", percentage) + "% Fail</font></html>");
             } else {
                 resultLabel.setText("<html>Student: " + studentName + "<br>Percentage: <font color='green'>" + String.format("%.2f", percentage) + "% Pass</font></html>");
             }
 
-            // Write student's information to file
             writeToFile(studentName, totalMarks, percentage);
         }
 
