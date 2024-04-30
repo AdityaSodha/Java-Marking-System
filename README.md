@@ -1,2 +1,28 @@
-# Java-Marking-System
-This project is a flexible marking system developed in Java that allows users to calculate percentages and store marks in a file for easy access and management. Whether you're a teacher grading assignments, a student tracking your progress, or anyone needing a versatile marking tool, this system provides a simple yet effective solution.
+# Java Marking System
+
+## Description
+This project is a marking system developed in Java that facilitates percentage calculation and mark storage. It provides a user-friendly interface for computing percentages based on total and obtained marks, and it allows for easy saving of marks to a file. Whether you're a teacher grading assignments or a student tracking your progress, this system offers a convenient solution.
+
+## Features
+- **Percentage Calculation:** Compute percentages effortlessly by providing total and obtained marks.
+- **File Saving:** Store marks in a file for future reference and analysis.
+- **Simple Interface:** Intuitive design for easy interaction.
+- **Customizable:** Adapt the system to your specific needs with configuration options.
+
+## Usage
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/AdityaSodha/Java-Marking-System
+2. **Compile and Run:**
+```bash
+javac MarkingSystem.java
+java MarkingSystem
+```
+3. **Follow On-Screen Instructions**
+   You can add your subjects, also the marks saved on a file too
+4. **Access Saved Marks**
+   Marks are stored in a file named "marks.txt" in the project directory.
+
+## License
+This project is licensed under the MIT License. see license to learn more!
+
