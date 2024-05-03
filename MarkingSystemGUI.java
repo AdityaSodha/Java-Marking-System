@@ -13,7 +13,7 @@ public class MarkingSystemGUI extends JFrame {
 
     public MarkingSystemGUI() {
         setTitle("Marking System");
-        setSize(400, 350);
+        setSize(400, 350); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(9, 2));
 
