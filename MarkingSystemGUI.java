@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
-public class MarkingSystemGUI extends JFrame {
+public class MarkingSystemGUI extends JFrame { 
     private JLabel nameLabel;
     private JTextField nameField;
     private JLabel[] labels;
